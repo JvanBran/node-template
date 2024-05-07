@@ -1,0 +1,107 @@
+{
+  "development": {
+    "username": "root",
+    "password": "123456",
+    "database": "database_development",
+    "host": "172.18.5.190",
+    "port": 19306,
+    "dialect": "mysql",
+    "dialectOptions": {
+      "charset": "utf8",
+      "bigNumberStrings": true,
+      "connectTimeout": 20000,
+      "dateStrings": true,
+      "typeCast": true
+    },
+    "pool": {
+      "max": 5,
+      "min": 0,
+      "acquire": 30000,
+      "idle": 10000
+    },
+    "timezone": "+08:00",
+    "define": {
+      "timestamps": true,
+      "paranoid": true,
+      "charset": "utf8",
+      "collate": "utf8_general_ci", 
+      "scopes":{
+        "bh":{
+          "attributes":{
+            "exclude":["updatedAt","createdAt","updatedAt"]
+          }
+        }
+      }
+    }
+  },
+  "test": {
+    "username": "root",
+    "password": "123456",
+    "database": "database_test",
+    "host": "192.168.1.13",
+    "port": 19306,
+    "dialect": "mysql",
+    "dialectOptions": {
+      "charset": "utf8",
+      "bigNumberStrings": true,
+      "connectTimeout": 20000,
+      "dateStrings": true,
+      "typeCast": true
+    },
+    "pool": {
+      "max": 5,
+      "min": 0,
+      "acquire": 30000,
+      "idle": 10000
+    },
+    "timezone": "+08:00",
+    "define": {
+      "timestamps": true,
+      "paranoid": true,
+      "charset": "utf8",
+      "collate": "utf8_general_ci", 
+      "scopes":{
+        "bh":{
+          "attributes":{
+            "exclude":["updatedAt","createdAt","updatedAt"]
+          }
+        }
+      }
+    }
+  },
+  "production": {
+    "username": "root",
+    "password": "123456",
+    "database": "database_production",
+    "host": "127.0.0.1",
+    "port": 3306,
+    "dialect": "mysql",
+    "dialectOptions": {
+      "charset": "utf8",
+      "bigNumberStrings": true,
+      "connectTimeout": 20000,
+      "dateStrings": true,
+      "typeCast": true
+    },
+    "pool": {
+      "max": 5,
+      "min": 0,
+      "acquire": 30000,
+      "idle": 10000
+    },
+    "timezone": "+08:00",
+    "define": {
+      "timestamps": true,
+      "paranoid": true,
+      "charset": "utf8",
+      "collate": "utf8_general_ci", 
+      "scopes":{
+        "bh":{
+          "attributes":{
+            "exclude":["updatedAt","createdAt","updatedAt"]
+          }
+        }
+      }
+    }
+  }
+}
